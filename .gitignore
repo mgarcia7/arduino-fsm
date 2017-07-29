@@ -1,3 +1,6 @@
+# Folder
+.DS_Store
+
 # Binaries
 testpix
 pix

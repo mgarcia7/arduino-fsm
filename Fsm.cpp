@@ -124,6 +124,9 @@ void Fsm::check_timer()
         }
       }
     }
+    else if (transition->start != 0) // w/o this, if a timed transition isn't allowed to complete, then the timer doesn't restart
+    	transition->start = 0;
+    }
   }
 }
 
